@@ -14,7 +14,9 @@ def first_challenge
   }
 
   #your code here
-  contacts.delect_if{|attribute, value| value == "strawberry"}
+  contacts.each{|attribute, value| if attribute == :favorite_icecream_flavors
+  value.delete_if{|flavor| flavor == "strawberry"}
+  }
   
   #remember to return your newly altered contacts hash!
   contacts
