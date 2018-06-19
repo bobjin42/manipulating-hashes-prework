@@ -20,7 +20,6 @@ def first_challenge
         value.delete_if{|flavor| flavor == "strawberry"}
         end
       end
-    end
   end
   
   
