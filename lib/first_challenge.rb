@@ -14,7 +14,7 @@ def first_challenge
   }
 
   #your code here
-  contacts
+  data.delect_if{|attribute, value|
   
   #remember to return your newly altered contacts hash!
   contacts
